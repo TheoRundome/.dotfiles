@@ -192,17 +192,17 @@ bindsym $mod+r mode "resize"
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # Display Wallpaper
-exec_always feh --bg-fill /home/me/Obrazy/gory.jpg
+exec_always --no-startup-id feh --bg-fill /home/me/Obrazy/gory.jpg
 
 # Key binding for i3lock
-bindsym $mod+x exec i3lock --image /home/me/Obrazy/space_nord.png
+bindsym $mod+x exec --no-startup-id i3lock --image /home/me/Obrazy/space_nord.png
 
 
 # Esc to CAPS
-exec_always setxkbmap -option caps:escape
+exec_always --no-startup-id setxkbmap -option caps:escape
 
 # Window Compositor
-exec_always picom -f -i 0.5 -m 1.0 --opacity-rule "80:name *= 'rofi'" 
+exec_always --no-startup-id picom -f -i 0.5 -m 1.0 --opacity-rule "80:name *= 'rofi'" 
 
 # Gaps
 gaps inner 10

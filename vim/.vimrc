@@ -4,11 +4,11 @@ Plug 'preservim/nerdtree'
 Plug 'vimwiki/vimwiki'
 Plug 'itchyny/lightline.vim'
 Plug 'junegunn/goyo.vim'
-Plug 'morhetz/gruvbox'
 Plug 'arcticicestudio/nord-vim'
+Plug 'tpope/vim-markdown'
 call plug#end()
 
-" set background=dark
+
 colorscheme nord 
 
 let g:lightline = {
@@ -23,7 +23,7 @@ filetype off
 
 " Turn syntax highlighting.
 syntax on
-" colorscheme gruvbox 
+
 filetype plugin indent on
 
 " Tutn off modelines.
@@ -117,4 +117,6 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 " VimWiki Markdown
 let g:vimwiki_list = [{'path': '~/vimwiki/', 'syntax': 'markdown', 'ext': '.md'}]
 
-
+" Split rules
+set splitright
+set splitbelow
