@@ -8,7 +8,6 @@ Plug 'arcticicestudio/nord-vim'
 Plug 'tpope/vim-markdown'
 call plug#end()
 
-
 colorscheme nord 
 
 let g:lightline = {
