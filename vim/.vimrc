@@ -2,6 +2,8 @@
 call plug#begin('~/.vim/plugged')
 Plug 'preservim/nerdtree'
 Plug 'vimwiki/vimwiki'
+Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
 Plug 'itchyny/lightline.vim'
 Plug 'junegunn/goyo.vim'
 Plug 'arcticicestudio/nord-vim'
@@ -119,3 +121,6 @@ let g:vimwiki_list = [{'path': '~/vimwiki/', 'syntax': 'markdown', 'ext': '.md'}
 " Split rules
 set splitright
 set splitbelow
+
+" FZF
+nnoremap <F2> :Files<CR>
