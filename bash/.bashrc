@@ -32,14 +32,14 @@ alias ll='lsd -al'
 alias cl='clear'
 alias rr='ranger'
 alias q='exit'
-alias conf='vim /home/me/.config/i3/config'
-alias confpoly='vim /home/me/.config/polybar/config'
+alias conf='nvim /home/me/.config/i3/config'
+alias confpoly='nvim /home/me/.config/polybar/config'
 
 # Vi key bindings
 set -o vi
 
 # Editor
-export EDITOR="vim"
-export VISUAL="vim"
+export EDITOR="nvim"
+export VISUAL="nvim"
 
 
