@@ -1,14 +1,13 @@
 " Plug-ins.
 call plug#begin('~/.vim/plugged')
-Plug 'preservim/nerdtree'
 Plug 'vimwiki/vimwiki'
-Plug 'junegunn/fzf'
-Plug 'junegunn/fzf.vim'
 Plug 'itchyny/lightline.vim'
 Plug 'junegunn/goyo.vim'
 Plug 'arcticicestudio/nord-vim'
 Plug 'tpope/vim-markdown'
 Plug 'junegunn/limelight.vim'
+Plug 'francoiscabrol/ranger.vim'
+Plug 'rbgrouleff/bclose.vim'
 call plug#end()
 
 colorscheme nord 
@@ -104,13 +103,6 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
 
-
-"NERDTree switch.
-map <F1> :NERDTreeToggle<CR>
-
-" Close vim if only NERDTree open.
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-
 " VimWiki Markdown
 let g:vimwiki_list = [{'path': '~/vimwiki/', 'syntax': 'markdown', 'ext': '.md'}]
 
@@ -118,11 +110,7 @@ let g:vimwiki_list = [{'path': '~/vimwiki/', 'syntax': 'markdown', 'ext': '.md'}
 set splitright
 set splitbelow
 
-" FZF
-nnoremap <F2> :Files<CR>
-
 " Goyo settings
-
 autocmd! User GoyoEnter Limelight
 autocmd! User GoyoLeave Limelight!
 
