@@ -35,6 +35,7 @@ alias q='exit'
 alias conf='nvim /home/me/.config/i3/config'
 alias confpoly='nvim /home/me/.config/polybar/config'
 alias v='nvim'
+alias vim='nvim'
 
 # Vi key bindings
 set -o vi

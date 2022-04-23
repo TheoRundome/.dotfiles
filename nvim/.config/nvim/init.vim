@@ -1,5 +1,5 @@
 " Plug-ins.
-call plug#begin('~/.vim/plugged')
+call plug#begin('~/.config/nvim/plugged')
 Plug 'vimwiki/vimwiki'
 Plug 'itchyny/lightline.vim'
 Plug 'junegunn/goyo.vim'
@@ -117,3 +117,4 @@ autocmd! User GoyoLeave Limelight!
 " Color name (:help cterm-colors) or ANSI code
 let g:limelight_conceal_ctermfg = 'gray'
 let g:limelight_conceal_ctermfg = 240
+
