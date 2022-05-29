@@ -207,7 +207,7 @@ exec_always --no-startup-id picom -f -i 0.5 -m 1.0 --opacity-rule "80:name *= 'r
 # Gaps
 gaps inner 10
 gaps outer 5
-
+smart_gaps on
 set $mode_gaps Gaps: (o)uter, (i)nner, (h)orizontal, (v)ertical, (t)op, (r)ight, (b)ottom, (l)eft
 set $mode_gaps_outer Outer Gaps: +|-|0 (local), Shift + +|-|0 (global)
 set $mode_gaps_inner Inner Gaps: +|-|0 (local), Shift + +|-|0 (global)
