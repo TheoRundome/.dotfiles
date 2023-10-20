@@ -40,3 +40,7 @@ alias cl='clear'
 alias rr='ranger'
 alias q='exit'
 alias ll='ls -al'
+
+# Editor
+ export VISUAL=vim
+ export EDITOR=vim
