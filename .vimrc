@@ -26,6 +26,7 @@ Plug 'junegunn/goyo.vim'
 Plug 'tpope/vim-markdown'
 Plug 'morhetz/gruvbox'
 Plug 'tribela/vim-transparent'
+Plug 'tbabej/taskwiki'
 call plug#end()
 
 colorscheme gruvbox
@@ -132,8 +133,9 @@ nnoremap <C-l> <C-w>l
 " Close vim if only NERDTree open.
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
-" VimWiki Markdown
+" VimWiki
 let g:vimwiki_list = [{'path': '~/vimwiki/', 'syntax': 'markdown', 'ext': '.md'}]
+
 
 " Split rules
 set splitright
