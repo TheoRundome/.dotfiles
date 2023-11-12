@@ -26,7 +26,7 @@ Plug 'junegunn/goyo.vim'
 Plug 'tpope/vim-markdown'
 Plug 'morhetz/gruvbox'
 Plug 'tribela/vim-transparent'
-Plug 'tbabej/taskwiki'
+Plug 'ervandew/supertab'
 call plug#end()
 
 colorscheme gruvbox
