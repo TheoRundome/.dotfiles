@@ -24,18 +24,10 @@ Plug 'vimwiki/vimwiki'
 Plug 'itchyny/lightline.vim'
 Plug 'junegunn/goyo.vim'
 Plug 'tpope/vim-markdown'
-Plug 'morhetz/gruvbox'
 Plug 'tribela/vim-transparent'
 Plug 'ervandew/supertab'
 call plug#end()
 
-colorscheme gruvbox
-set background=dark
-
-
-let g:lightline = {
-     \ 'colorscheme': 'gruvbox',
-     \ }
 
 " Set compatibility to Vim only.
 set nocompatible

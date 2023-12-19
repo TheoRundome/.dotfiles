@@ -44,3 +44,6 @@ alias ll='ls -al'
 # Editor
  export VISUAL=vim
  export EDITOR=vim
+
+
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=6'
