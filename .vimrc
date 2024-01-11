@@ -16,7 +16,6 @@ autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
 \| endif
 
 
-
 " Plug-ins.
 call plug#begin('~/.vim/plugged')
 Plug 'preservim/nerdtree'
@@ -26,8 +25,15 @@ Plug 'junegunn/goyo.vim'
 Plug 'tpope/vim-markdown'
 Plug 'tribela/vim-transparent'
 Plug 'ervandew/supertab'
+Plug 'morhetz/gruvbox'
 call plug#end()
 
+let g:lightline = {
+      \ 'colorscheme':'gruvbox',
+      \ }
+
+colorscheme gruvbox
+set background=dark
 
 " Set compatibility to Vim only.
 set nocompatible
@@ -54,7 +60,9 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 set noshiftround
-
+set ruler
+set showmatch
+set smarttab
 " Display 5 lines above/below the cursor when scrolling a mouse.
 set scrolloff=5
 
@@ -68,7 +76,7 @@ set ttyfast
 set laststatus=2
 
 " Display options
-set showmode
+set noshowmode
 set showcmd
 
 " Show line numbers.

@@ -5,6 +5,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
 HISTSIZE=10000
@@ -21,16 +22,11 @@ compinit
 # End of lines added by compinstall
 
 # Autosugestions
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+#ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=4'
 
 # Highlighting
-source /home/sebek/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-# p10k
-source ~/powerlevel10k/powerlevel10k.zsh-theme
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
+source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # bind jj to Esc 
 bindkey -M viins 'jj' vi-cmd-mode
@@ -40,10 +36,12 @@ alias cl='clear'
 alias rr='ranger'
 alias q='exit'
 alias ll='ls -al'
+alias v='nvim'
 
 # Editor
- export VISUAL=vim
- export EDITOR=vim
+export VISUAL=nvim
+export EDITOR=nvim
+source ~/powerlevel10k/powerlevel10k.zsh-theme
 
-
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=6'
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
