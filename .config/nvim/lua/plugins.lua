@@ -40,7 +40,7 @@ require("lazy").setup({
      },
     },
 
-    {
+    {   -- Set treesitter
         "nvim-treesitter/nvim-treesitter",
         config = function()
             require("nvim-treesitter.configs").setup({
@@ -48,13 +48,18 @@ require("lazy").setup({
 
                 auto_install = true,
 
+                indent = {
+                    enable = true,
+                
+
                 highlight = {
                     enable = true,
                 },
+              },
             })
         end,
     },
-    {
+    {   -- Neorg
         "nvim-neorg/neorg",
         build = ":Neorg sync-parsers",
         -- tag = "*",
@@ -67,8 +72,13 @@ require("lazy").setup({
               ["core.dirman"] = { -- Manages Neorg workspaces
                 config = {
                   workspaces = {
-                    notes = "~/notes",
+                    general = "~/notes/general",
+                    linux = "~/notes/linux",
+                    coding = "~/notes/coding",
+                    ctf = "~/notes/ctf",
+                    journal = "~/journal",
                   },
+                
                 },
               },
             },
@@ -76,5 +86,19 @@ require("lazy").setup({
         end,
       },
 
+    
+
+    { -- Ranger
+      "kelly-lin/ranger.nvim",
+      config = function()
+        require("ranger-nvim").setup({ replace_netrw = true })
+        vim.api.nvim_set_keymap("n", "<leader>rr", "", {
+          noremap = true,
+          callback = function()
+            require("ranger-nvim").open(true)
+          end,
+        })
+      end,
+    },
     
 })
