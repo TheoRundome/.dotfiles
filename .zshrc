@@ -37,6 +37,7 @@ alias rr='ranger'
 alias q='exit'
 alias ll='ls -al'
 alias v='nvim'
+alias rss='snownews'
 
 # Editor
 export VISUAL=nvim
