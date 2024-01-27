@@ -8,17 +8,19 @@ endi
 
 "Plug-ins.
 call plug#begin('~/.config/nvim/plugged')
+Plug 'preservim/nerdtree'
+Plug 'ryanoasis/vim-devicons'
 Plug 'itchyny/lightline.vim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'Vimjas/vim-python-pep8-indent'
 Plug 'vimwiki/vimwiki'
 Plug 'junegunn/goyo.vim'
-Plug 'junegun/limelight.vim'
 Plug 'tpope/vim-markdown'
 Plug 'tribela/vim-transparent'
 Plug 'ervandew/supertab'
 Plug 'morhetz/gruvbox'
 call plug#end()
+lua require('config/treesitter')
 
 " Colors.
 colorscheme gruvbox
@@ -47,7 +49,7 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
 
-nnoremap <leader>e :Explore<CR>
+nnoremap <C-n> :NERDTreeToggle<CR>
 
 " Setup
 set nocompatible
@@ -88,4 +90,8 @@ set splitbelow
 " VimWiki
 let g:vimwiki_list = [{'path': '~/vimwiki/', 'syntax': 'markdown', 'ext': '.md'}]
 
+" NertTree setup.
+" Close the tab if NERDTree is the only window remaining in it.
+autocmd BufEnter * if winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
 
+let NERDTreeShowHidden=1
