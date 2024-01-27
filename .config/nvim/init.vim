@@ -11,8 +11,6 @@ call plug#begin('~/.config/nvim/plugged')
 Plug 'itchyny/lightline.vim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'Vimjas/vim-python-pep8-indent'
-"Plug 'francoiscabrol/ranger.vim'
-Plug 'rbgrouleff/bclose.vim'
 Plug 'vimwiki/vimwiki'
 Plug 'junegunn/goyo.vim'
 Plug 'junegun/limelight.vim'
