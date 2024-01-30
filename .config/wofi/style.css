@@ -1,0 +1,33 @@
+* {
+    border-radius: 0px;
+    border: none;
+}
+
+window {
+    font-size: 25px;
+    background-color: rgba(60, 56, 54, 0.7);
+    color: #fbf1c7;
+}
+
+#entry {
+    padding: 0.25em;
+}
+
+#entry:selected {
+    background-color: #d79921;
+}
+
+#text:selected {
+    color: #1d2021;
+}
+
+#input{
+    background-color: rgba(60, 56, 54, 0.5);
+    color: #fbf1c7;
+    padding: 0.25em;
+}
+
+image {
+    margin-left: .25em;
+    margin-right: .25em;
+}

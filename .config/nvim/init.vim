@@ -8,6 +8,7 @@ endi
 
 "Plug-ins.
 call plug#begin('~/.config/nvim/plugged')
+Plug 'chrisbra/Colorizer'
 Plug 'preservim/nerdtree'
 Plug 'ryanoasis/vim-devicons'
 Plug 'itchyny/lightline.vim'
@@ -20,6 +21,8 @@ Plug 'tribela/vim-transparent'
 Plug 'ervandew/supertab'
 Plug 'morhetz/gruvbox'
 call plug#end()
+
+" Lua config require.
 lua require('config/treesitter')
 
 " Colors.
@@ -94,4 +97,5 @@ let g:vimwiki_list = [{'path': '~/vimwiki/', 'syntax': 'markdown', 'ext': '.md'}
 " Close the tab if NERDTree is the only window remaining in it.
 autocmd BufEnter * if winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
 
+" Show hidden files.
 let NERDTreeShowHidden=1
