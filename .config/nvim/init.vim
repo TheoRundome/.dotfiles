@@ -8,17 +8,18 @@ endi
 
 "Plug-ins.
 call plug#begin('~/.config/nvim/plugged')
+Plug 'junegunn/limelight.vim'
+Plug 'sheerun/vim-polyglot'
+Plug 'preservim/vim-pencil'
 Plug 'chrisbra/Colorizer'
 Plug 'preservim/nerdtree'
 Plug 'ryanoasis/vim-devicons'
 Plug 'itchyny/lightline.vim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-Plug 'Vimjas/vim-python-pep8-indent'
 Plug 'vimwiki/vimwiki'
 Plug 'junegunn/goyo.vim'
 Plug 'tpope/vim-markdown'
 Plug 'tribela/vim-transparent'
-Plug 'ervandew/supertab'
 Plug 'morhetz/gruvbox'
 call plug#end()
 
@@ -99,3 +100,16 @@ autocmd BufEnter * if winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTa
 
 " Show hidden files.
 let NERDTreeShowHidden=1
+
+let g:goyo_height='80%'
+let g:goyo_width='80%'
+
+" Limelight configuration.
+let g:limelight_conceal_ctermfg = 'gray'
+let g:limelight_conceal_ctermfg = 240
+let g:limelight_conceal_guifg = 'DarkGray'
+let g:limelight_conceal_guifg = '#777777'
+
+" Limelight Goyo integration.
+autocmd! User GoyoEnter Limelight
+autocmd! User GoyoLeave Limelight!
