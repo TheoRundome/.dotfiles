@@ -46,3 +46,5 @@ alias rss='snownews'
 export VISUAL=nvim
 export EDITOR=nvim
 
+export PATH=$PATH:/home/sebek/.local/bin
+
