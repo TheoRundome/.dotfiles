@@ -24,7 +24,7 @@ set $menu wofi --show
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * background ~/Obrazy/lingruv.jpg fill
+output * background ~/Obrazy/gnug.jpg fill
 #
 # Example configuration:
 #
