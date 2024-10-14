@@ -236,7 +236,7 @@ gaps inner 5
 gaps outer 5
 
 # Notify 
-exec mako 
+exec mako --default-timeout 10000
 
 include /etc/sway/config.d/*
 
