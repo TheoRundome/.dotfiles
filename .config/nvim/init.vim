@@ -25,7 +25,6 @@ call plug#end()
 
 " Lua config require.
 lua require('config/treesitter')
-
 " Colors.
 colorscheme gruvbox
 set background=dark
@@ -61,7 +60,7 @@ filetype off
 syntax on
 filetype plugin indent on
 set modelines=0
-set wrap
+set nowrap
 set textwidth=80
 set formatoptions=tcqrnl
 set tabstop=4
@@ -90,6 +89,10 @@ set noundofile
 set wildmenu
 set splitright
 set splitbelow
+set undofile
+set undolevels=1000
+set undoreload=10000
+set autowrite
 
 " VimWiki
 let g:vimwiki_list = [{'path': '~/vimwiki/', 'syntax': 'markdown', 'ext': '.md'}]
@@ -113,6 +116,4 @@ let g:limelight_conceal_guifg = '#777777'
 " Limelight Goyo integration.
 autocmd! User GoyoEnter Limelight
 autocmd! User GoyoLeave Limelight!
-
-
 
