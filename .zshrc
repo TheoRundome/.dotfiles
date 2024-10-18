@@ -41,6 +41,7 @@ alias q='exit'
 alias ll='ls -al'
 alias v='nvim'
 alias rss='snownews'
+alias matrix='unimatrix'
 
 # Editor
 export VISUAL=nvim

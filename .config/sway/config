@@ -20,11 +20,12 @@ set $term alacritty
 # on the original workspace that the command was run on.
 #set $menu dmenu_path | dmenu | xargs swaymsg exec --
 set $menu rofi -show drun 
-
+#set power menu
+set $power rofi -show power-menu -modi "power-menu:~/.config/sway/rofi-power-menu --choices=shutdown/reboot/logout"
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * background ~/Obrazy/gnug.jpg fill
+output * background ~/Obrazy/desk.jpeg fill
 #
 # Example configuration:
 #
@@ -80,6 +81,9 @@ middle_emulation enabled
 
     # Start your launcher
     bindsym $mod+d exec $menu
+
+    # Start power-menu
+    bindsym $mod+p exec $power
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
@@ -245,10 +249,13 @@ input * xkb_options "caps:escape_shifted_capslock"
 
 # Volume Control
 bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +10%
-bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -10%
+bindsym XF86AudioLowerVolume exec pactl set-sink-volume @jkDEFAULT_SINK@ -10%
 bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
 
 
-set $opacity 0.9
-for_window [class=".*"] opacity $opacity
-for_window [app_id=".*"] opacity $opacity
+#set $opacity 0.9
+#for_window [class=".*"] opacity $opacity
+#for_window [app_id=".*"] opacity $opacity
+
+bindsym $mod+Shift+z exec grimshot save area
+bindsym $mod+Shift+a exec grimshot save window

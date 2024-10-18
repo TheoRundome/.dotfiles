@@ -113,3 +113,4 @@ let g:limelight_conceal_guifg = '#777777'
 " Limelight Goyo integration.
 autocmd! User GoyoEnter Limelight
 autocmd! User GoyoLeave Limelight!
+
