@@ -1,74 +1,76 @@
 * {
-    padding: 0px;
-    transition-duration: 0s;
-    margin-bottom: 0px;
-    margin: 0px;
+  padding: 0px;
+  transition-duration: 0s;
+  margin-bottom: 0px;
+  margin: 0px;
 }
 
 window#waybar {
-    background-color: rgba(1,1,1,0);
-    margin: 0;
+  background-color: rgba(1, 1, 1, 0);
+  margin: 0;
 }
 
 #workspaces button {
-    margin: 5px 3px 0px 0px;
-    background: transparent;
-    padding: 0px;
+  margin: 5px 3px 0px 0px;
+  background: transparent;
+  padding: 0px;
 }
 
 #workspaces,
 #network,
-#clock, 
+#clock,
 #battery,
+#bluetooth,
 #mode {
-	font-family: 'Fira Code', 'otf-font-awesome';
-	font-size: 11pt;
-	font-weight: normal;
-	padding: 0;
+  font-family: "Fira Code", "otf-font-awesome";
+  font-size: 11pt;
+  font-weight: normal;
+  padding: 0;
 }
 
 #workspaces button label {
-	padding: 1px 8px 0px 8px;
-	margin: 0px;
-	color: #d5c4a1;
-	border-radius: 5px 5px 5px 5px;
-	background-color: #3c3836;
+  padding: 1px 8px 0px 8px;
+  margin: 0px;
+  color: #d5c4a1;
+  border-radius: 5px 5px 5px 5px;
+  background-color: #3c3836;
 }
 
 #workspaces {
-	margin-left: 5px;
+  margin-left: 5px;
 }
 
 #workspaces button.visible label,
 #workspaces button.focused label {
-	background-color: #928374;
-	color: #1d2021;
+  background-color: #928374;
+  color: #1d2021;
 }
 
 #mode {
-	background-color: #83a598;
-    margin: 6px 0px 1px 10px;          
-	border-radius: 5px 5px 5px 5px;
-	padding: 1px 8px 0px 8px;
-    color: #d5c4a1;
-	font-weight: normal;
+  background-color: #83a598;
+  margin: 6px 0px 1px 10px;
+  border-radius: 5px 5px 5px 5px;
+  padding: 1px 8px 0px 8px;
+  color: #d5c4a1;
+  font-weight: normal;
 }
 
 #clock,
 #network,
+#bluetooth,
 #battery {
-    background-color: #3c3836;
-    padding: 0px 8px;
-    margin: 5px 0px 0px 5px;
-	border-radius: 5px 5px 5px 5px;
-	color: #d5c4a1;
+  background-color: #3c3836;
+  padding: 0px 8px;
+  margin: 5px 0px 0px 5px;
+  border-radius: 5px 5px 5px 5px;
+  color: #d5c4a1;
 }
 
 #clock.1 {
-	margin-right: 5px;
-	border-radius: 5px 5px 5px 5px;
+  margin-right: 5px;
+  border-radius: 5px 5px 5px 5px;
 }
 
 #clock.2 {
-	border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
 }
