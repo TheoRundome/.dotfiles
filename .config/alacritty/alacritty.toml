@@ -1,0 +1,21 @@
+import = [
+"~/.config/alacritty/themes/themes/gruvbox_dark.toml",
+]
+
+[window]
+opacity = 0.9
+padding = { x = 3, y = 3 }
+dynamic_padding = true
+decorations = "None"
+
+[font]
+size = 15.00
+
+[selection]
+save_to_clipboard = true
+
+[mouse]
+hide_when_typing = true
+bindings = [
+{mouse = "Right", action = "Paste"} 
+]
